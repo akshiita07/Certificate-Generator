@@ -34,5 +34,6 @@ const generPdf = async function (userName) {
 document.getElementById('subm').addEventListener("submit",function(){
     event.preventDefault(); // Prevent form submission and page refresh
     let nameUser=document.getElementById('uname').value;
+    document.getElementById('getCerti').style.height="100vh";
     generPdf(nameUser)
 });
